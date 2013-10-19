@@ -61,7 +61,7 @@ $(full_classes_emma_jar) : $(full_classes_compiled_jar) | $(EMMA_JAR)
 	$(transform-classes.jar-to-emma)
 
 $(built_javalib_jar) : $(full_classes_emma_jar)
-	@echo Copying: $@
+	@echo -e ${PRT_HST}"Copying:"${CL_RST}" $@
 	$(hide) $(ACP) -fp $< $@
 
 else # LOCAL_EMMA_INSTRUMENT
