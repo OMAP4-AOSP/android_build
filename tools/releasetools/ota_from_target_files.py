@@ -609,6 +609,18 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_items = ItemSet("system", "META/filesystem_config.txt")
   script.ShowProgress(system_progress, 0)
+  script.Print("")
+  script.Print("   ___    __  __     _     ___   _ _   ")
+  script.Print("  / _ \  |  \/  |   /_\   | _ \ | | |  ")
+  script.Print(" | (_) | | |\/| |  / _ \  |  _/ |_  _| ")
+  script.Print("  \___/  |_|  |_| /_/ \_\ |_|     |_|  ")
+  script.Print("                  ___                  ")
+  script.Print("                 |___|                ")
+  script.Print("        _      ___    ___   ___        ")
+  script.Print("       /_\    / _ \  / __| | _ \       ")
+  script.Print("      / _ \  | (_) | \__ \ |  _/       ")
+  script.Print("     /_/ \_\  \___/  |___/ |_|         ")
+  script.Print("")
 
   if block_based:
     # Full OTA is done as an "incremental" against an empty source
