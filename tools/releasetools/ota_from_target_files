@@ -486,6 +486,18 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   device_specific.FullOTA_InstallBegin()
 
   script.ShowProgress(0.5, 0)
+  script.Print("")
+  script.Print("   ___    __  __     _     ___   _ _   ")
+  script.Print("  / _ \  |  \/  |   /_\   | _ \ | | |  ")
+  script.Print(" | (_) | | |\/| |  / _ \  |  _/ |_  _| ")
+  script.Print("  \___/  |_|  |_| /_/ \_\ |_|     |_|  ")
+  script.Print("                  ___                  ")
+  script.Print("                 |___|                 ")
+  script.Print("        _      ___    ___   ___        ")
+  script.Print("       /_\    / _ \  / __| | _ \       ")
+  script.Print("      / _ \  | (_) | \__ \ |  _/       ")
+  script.Print("     /_/ \_\  \___/  |___/ |_|         ")
+  script.Print("")
 
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
