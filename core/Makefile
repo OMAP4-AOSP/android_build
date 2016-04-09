@@ -1325,7 +1325,7 @@ ifneq ($(recovery_fstab),)
 # -----------------------------------------------------------------
 # OTA update package
 
-name := aosp-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)
+name := aosp-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date -u +%Y%m%d-%H%M)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
